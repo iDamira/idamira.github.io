@@ -6,10 +6,10 @@ $(document).ready(function(){
 
   var rotate = function(){
     bracketLeft.css({
-      '-moz-transform': 'rotate(360deg)',
-      '-webkit-transform': 'rotate(360deg)',
-      '-o-transform': 'rotate(360deg)',
-      '-ms-transform': 'rotate(360deg)',
+      '-moz-transform': 'rotate(-360deg)',
+      '-webkit-transform': 'rotate(-360deg)',
+      '-o-transform': 'rotate(-360deg)',
+      '-ms-transform': 'rotate(-360deg)',
       'transform': 'rotate(-360deg)'
     }, 1000).animate({
       opacity: 1
