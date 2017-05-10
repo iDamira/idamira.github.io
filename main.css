@@ -21,6 +21,8 @@ header, footer {
 
 h1 {
   overflow: hidden;
+  opacity: 0;
+  transition: opacity 2s;
 }
 
 p {
@@ -30,10 +32,14 @@ p {
 
 #bracket-left {
   position: absolute;
-  left: 40vw;
+  opacity: 0;
+  left: 50vw;
+  transition: transform 1s, left 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
 #bracket-right {
   position: absolute;
-  right: 40vw;
+  opacity: 0;
+  right: 50vw;
+  transition: transform 1s, right 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
