@@ -1,45 +1,79 @@
 header, footer {
   height: 20vh;
   width: 100vw;
-  background-color: grey;
+  background-color: white;
+  transition: all 5s;
 }
 
-.body {
-  height: 60vh;
-  width: 100vw;
-  background-color: orange;
+footer {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.body h1 {
+a {
+  padding: 3vh;
+}
+
+#footer-block, #header-block {
+  position: absolute;
+  height: 20vh;
+  width: 100vw;
+  background-color: orange;
+  z-index: 1;
+}
+
+div.body {
+  height: 60vh;
+  width: 100vw;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+/*  z-index: -1;*/
+}
+
+div#body-block {
+  height: 60vh;
+  width: 100vw;
+  background-color: #ffa500;
+  z-index: 1;
+  position: absolute;
+}
+
+/*.body h1 {
   font-size: 3em;
   color: white;
   letter-spacing: .01em;
-}
+}*/
 
 h1 {
+  font-size: 3em;
+  color: white;
+  letter-spacing: .01em;
   overflow: hidden;
   opacity: 0;
-  transition: opacity 2s;
+  transition: opacity 2s, color 1s;
+  z-index: 1;
 }
 
 p {
   font-size: 5em;
   color: white;
+  z-index: 1;
+  transition: color 1s;
 }
 
 #bracket-left {
   position: absolute;
   opacity: 0;
   left: 50vw;
-  transition: transform 1s, left 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: opacity .4s, transform .9s, left 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
 #bracket-right {
   position: absolute;
   opacity: 0;
   right: 50vw;
-  transition: transform 1s, right 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: opacity .4s, transform .9s, right 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
