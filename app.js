@@ -55,7 +55,8 @@ $(document).ready(function(){
       right: '100vw'
     }, 1800);
     body.animate({
-      left: '100vw'
+      left: '100vw',
+      width: '0vw'
     }, 1800);
   };
 
@@ -69,6 +70,29 @@ $(document).ready(function(){
     }, 1000);
   };
 
+
+  var imageMail = $("img#mail");
+  var imageGit = $("img#github");
+  var imageLinked = $("img#linkedin");
+
+  // $("img").on("mouseover", rotateImages);
+
+  var rotateImages = function(){
+
+     setTimeout(function(){
+      // imageMail.toggleClass("rotate");
+        imageMail.css({'transform':'rotateY(360deg)'},1000)}, 300);
+
+     setTimeout(function(){
+      // imageLinked.toggleClass("rotate");
+        imageLinked.css({'transform':'rotateY(360deg)'},1000)},600);
+
+     setTimeout(function(){
+      // imageGit.toggleClass("rotate");
+      imageGit.css({'transform':'rotateY(360deg)'},1000)},900);
+  };
+
+// console.log(imagesArray[1][0]);
 // FUNCTIONS
 
 // FUNCTIONS INVOCATIONS
@@ -78,6 +102,7 @@ $(document).ready(function(){
   setTimeout(removeBlocks, 3500);
   setTimeout(changeLogoColor, 4500);
   setTimeout(animateLogo, 5000);
+  setTimeout(rotateImages, 5400);
 // FUNCTIONS INVOCATIONS
 
 }); //END OF DOCUMENT.ready
