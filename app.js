@@ -50,13 +50,13 @@ $(document).ready(function(){
   var removeBlocks = function(){
     footer.animate({
       right: '100vw'
-    }, 2000);
+    }, 1800);
     header.animate({
       right: '100vw'
-    }, 2000);
+    }, 1800);
     body.animate({
       left: '100vw'
-    }, 2000);
+    }, 1800);
   };
 
   var animateLogo = function(){

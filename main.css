@@ -18,6 +18,8 @@ footer {
 
 #images {
   margin-bottom: 20px;
+  padding-bottom: 30px;
+
 }
 
 #credit, #credit a {
@@ -28,12 +30,22 @@ footer {
 
 #images a {
   padding: 3vh;
+
+}
+
+img {
+  transition: transform 2s;
+}
+
+img:hover {
+  transform: rotateY(360deg);
 }
 
 #footer-block, #header-block {
   position: absolute;
   height: 20vh;
   width: 100vw;
+  opacity: 1;
   background-color: orange;
   z-index: 1;
 }
