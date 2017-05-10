@@ -30,9 +30,9 @@ $(document).ready(function(){
     $("h1").css("opacity","1");
   };
 
-  setTimeout(textAppear, 2000);
-  setTimeout(rotate, 500);
-  setTimeout(moveToPositions, 800);
+  setTimeout(rotate, 1000);
+  setTimeout(textAppear, 2500);
+  setTimeout(moveToPositions, 1800);
 
 });
 
