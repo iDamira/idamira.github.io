@@ -11,7 +11,7 @@ $(document).ready(function(){
       '-o-transform': 'rotate(-360deg)',
       '-ms-transform': 'rotate(-360deg)',
       'transform': 'rotate(-360deg)'
-    }, 1000).animate({
+    }).animate({
       opacity: 1
     }, 400);
     bracketRight.css({
@@ -20,7 +20,7 @@ $(document).ready(function(){
       '-o-transform': 'rotate(360deg)',
       '-ms-transform': 'rotate(360deg)',
       'transform': 'rotate(360deg)'
-    }, 1000).animate({
+    }).animate({
       opacity: 1
     }, 400);
   };
