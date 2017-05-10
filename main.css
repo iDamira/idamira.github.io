@@ -107,7 +107,7 @@ img:hover {
   font-size: .7em;
   letter-spacing: .1em;
   padding-top: 10px;
-  border-top: 1px solid grey;
+  border-top: 3px double #e5b800;
 }
 
 h1 {
