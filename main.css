@@ -10,7 +10,7 @@ header {
 
 footer {
   height: 20vh;
-  display: flex;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -20,13 +20,13 @@ footer {
   margin-bottom: 20px;
 }
 
-#credit, #credit p, #credit a{
+#credit, #credit a {
   color: lightgrey;
   font-size: 10px;
   padding-top: 40px;
 }
 
-a {
+#images a {
   padding: 3vh;
 }
 
