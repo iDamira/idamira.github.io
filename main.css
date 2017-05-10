@@ -45,9 +45,18 @@ img:hover {
   transform: rotateY(360deg);
 }
 
-#footer-block, #header-block {
+#footer-block {
   position: absolute;
   height: 20vh;
+  width: 100vw;
+  opacity: 1;
+  background-color: orange;
+  z-index: 1;
+}
+
+#header-block {
+  position: absolute;
+  height: 10vh;
   width: 100vw;
   opacity: 1;
   background-color: orange;
@@ -115,7 +124,7 @@ p {
   position: absolute;
   font-size: 5em;
   color: white;
-
+  top: 40vh;
   transition: color 1s;
 }
 
