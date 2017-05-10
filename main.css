@@ -6,6 +6,7 @@ header, footer {
 
 header {
   height: 10vh;
+  z-index: 0;
 }
 
 footer {
@@ -34,6 +35,7 @@ footer {
 }
 
 img {
+  padding-top: 5vh;
   transition: transform 2s;
 }
 
@@ -59,10 +61,12 @@ img {
   height: 70vh;
   width: 100vw;
   background-color: white;
+/*  background-color: #f3f3f3;*/
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+/*  box-shadow: inset 3px 3px 30px 0px rgba(0,0,0,0.2);*/
 /*  z-index: -1;*/
 }
 
@@ -82,9 +86,9 @@ img {
 
 #logo {
   z-index: 1;
-  width: 40vw;
+  width: 100vw;
   height: 30vh;
-  display: inline-flex;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -96,7 +100,7 @@ img {
   left: 44vw;
   z-index: 1;
   color: black;
-  font-size: .7em;
+  font-size: .7vw;
   letter-spacing: .1em;
   padding-top: 10px;
   border-top: 3px double #e5b800;
@@ -104,20 +108,22 @@ img {
 
 h1 {
   position: absolute;
-  padding: 2vh;
-  font-size: 3em;
-  color: white;
+  margin-bottom: 2vh;
+  font-size: 3.5vw;
+  color: #f3f3f3;
   letter-spacing: .01em;
   opacity: 0;
   transition: opacity 2s, color 1s;
+  font-family: 'Crimson Text', sans-serif;
 }
 
 p {
   position: absolute;
-  font-size: 5em;
-  color: white;
+  font-size: 5.5vw;
+  color: #f3f3f3;
   top: 40vh;
   transition: color 1s;
+/*  font-family: 'Raleway', sans-serif;*/
 }
 
 #bracket-left {
