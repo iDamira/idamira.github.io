@@ -31,8 +31,9 @@ $(document).ready(function(){
   };
 
   setTimeout(rotate, 1000);
-  setTimeout(textAppear, 2500);
   setTimeout(moveToPositions, 1800);
+  setTimeout(textAppear, 2500);
+
 
 });
 
