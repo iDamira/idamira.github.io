@@ -38,7 +38,7 @@ a {
   z-index: 1;
 }
 
-div.body {
+.body {
   height: 70vh;
   width: 100vw;
   background-color: white;
@@ -49,7 +49,7 @@ div.body {
 /*  z-index: -1;*/
 }
 
-div#body-block {
+#body-block {
   height: 70vh;
   width: 100vw;
   background-color: #ffa500;
