@@ -1,14 +1,29 @@
 header, footer {
-  height: 20vh;
   width: 100vw;
   background-color: white;
   transition: all 5s;
 }
 
+header {
+  height: 10vh;
+}
+
 footer {
+  height: 20vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+}
+
+#images {
+  margin-bottom: 20px;
+}
+
+#credit, #credit p, #credit a{
+  color: lightgrey;
+  font-size: 10px;
+  padding-top: 40px;
 }
 
 a {
@@ -24,17 +39,18 @@ a {
 }
 
 div.body {
-  height: 60vh;
+  height: 70vh;
   width: 100vw;
   background-color: white;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 /*  z-index: -1;*/
 }
 
 div#body-block {
-  height: 60vh;
+  height: 70vh;
   width: 100vw;
   background-color: #ffa500;
   z-index: 1;
@@ -47,20 +63,43 @@ div#body-block {
   letter-spacing: .01em;
 }*/
 
+#logo {
+  z-index: 1;
+  width: 40vw;
+  height: 30vh;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#type-it p {
+  position: absolute;
+  top: 50vh;
+  opacity: 0;
+  left: 44vw;
+  z-index: 1;
+  color: black;
+  font-size: .7em;
+  letter-spacing: .1em;
+  padding-top: 10px;
+  border-top: 1px solid grey;
+}
+
 h1 {
+  position: absolute;
+  padding: 2vh;
   font-size: 3em;
   color: white;
   letter-spacing: .01em;
-  overflow: hidden;
   opacity: 0;
   transition: opacity 2s, color 1s;
-  z-index: 1;
 }
 
 p {
+  position: absolute;
   font-size: 5em;
   color: white;
-  z-index: 1;
+
   transition: color 1s;
 }
 

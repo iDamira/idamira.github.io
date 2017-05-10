@@ -58,6 +58,17 @@ $(document).ready(function(){
       left: '100vw'
     }, 2000);
   };
+
+  var animateLogo = function(){
+    $("h1").animate({
+      paddingBottom: '5vh'
+    }, 1000);
+    $("#type-it p").animate({
+      top: '46vh',
+      opacity: 1
+    }, 1000);
+  };
+
 // FUNCTIONS
 
 // FUNCTIONS INVOCATIONS
@@ -66,6 +77,7 @@ $(document).ready(function(){
   setTimeout(textAppear, 2500);
   setTimeout(removeBlocks, 3500);
   setTimeout(changeLogoColor, 4500);
+  setTimeout(animateLogo, 5000);
 // FUNCTIONS INVOCATIONS
 
 }); //END OF DOCUMENT.ready
