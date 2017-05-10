@@ -6,22 +6,30 @@ $(document).ready(function(){
 
   var rotate = function(){
     bracketLeft.css({
+      '-moz-transform': 'rotate(360deg)',
+      '-webkit-transform': 'rotate(360deg)',
+      '-o-transform': 'rotate(360deg)',
+      '-ms-transform': 'rotate(360deg)',
       'transform': 'rotate(-360deg)'
     }, 1000).animate({
       opacity: 1
     }, 400);
-        bracketRight.css({
-      'transform': 'rotate(360deg)',
+    bracketRight.css({
+      '-moz-transform': 'rotate(360deg)',
+      '-webkit-transform': 'rotate(360deg)',
+      '-o-transform': 'rotate(360deg)',
+      '-ms-transform': 'rotate(360deg)',
+      'transform': 'rotate(360deg)'
     }, 1000).animate({
       opacity: 1
     }, 400);
   };
 
   var moveToPositions = function(){
-    bracketLeft.animate({
+    bracketLeft.css({
       left: '40vw'
     }, 400);
-    bracketRight.animate({
+    bracketRight.css({
       right: '40vw'
     }, 400);
   }
