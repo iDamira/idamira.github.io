@@ -28,10 +28,10 @@ $(document).ready(function(){
   var moveToPositions = function(){
     bracketLeft.css({
       left: '40vw'
-    }, 400);
+    });
     bracketRight.css({
       right: '40vw'
-    }, 400);
+    });
   }
 
   var textAppear = function(){
@@ -39,7 +39,7 @@ $(document).ready(function(){
   };
 
   setTimeout(rotate, 1000);
-  setTimeout(moveToPositions, 1800);
+  setTimeout(moveToPositions, 1300);
   setTimeout(textAppear, 2500);
 
 
